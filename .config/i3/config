@@ -6,14 +6,15 @@ font pango: Noto Sans 8
 
 # --- Auto Start --- #
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id feh --bg-scale /home/waste/Pictures/Wallpaper
+exec --no-startup-id feh --bg-scale /home/waste/Pictures/Wallpaper/coffee1.jpg
 exec --no-startup-id xsettingsd &
 
 # --- Terminal --- #
 bindsym $mod+Return exec gnome-terminal
 
 # --- Keybind --- #
-bindsym $mod+i exec i3lock -i /home/waste/Pictures/Wallpaper
+bindsym Control+Print exec gnome-screenshot -i
+bindsym $mod+i exec i3lock -i /home/waste/Pictures/Wallpaper/coffee1.jpg
 bindsym $mod+Shift+f exec thunar
 bindsym $mod+Shift+w exec firefox
 bindsym $mod+Shift+s exec spotify
